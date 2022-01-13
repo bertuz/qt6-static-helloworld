@@ -1,0 +1,5 @@
+[requires]
+qt/6.2.2
+
+[generators]
+cmake
