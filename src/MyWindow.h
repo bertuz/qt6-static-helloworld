@@ -14,10 +14,14 @@ class MyWindow : public QWidget
 public:
     explicit MyWindow(QWidget *parent = 0);
 
-    signals:
+signals:
+    void counterReached();
 public slots:
+private slots:
+    void slotButtonClicked(bool checked);
 private:
     QPushButton *m_button;
+    unsigned int buttonClicks{0};
 };
 
 #endif //TST2_MYWINDOW_H

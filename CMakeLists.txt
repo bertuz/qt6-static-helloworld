@@ -22,8 +22,4 @@ add_executable(${PROJECT_NAME} src/main.cpp src/MyWindow.cpp  src/MyWindow.h)
 set_target_properties(${PROJECT_NAME} PROPERTIES AUTOMOC ON)
 set_property(GLOBAL PROPERTY CMAKE_AUTOMOC ON)
 
-#target_sources(test PRIVATE src/main.cpp)
-#target_sources(test PRIVATE src/mainwindow.cpp)
-
-
 target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS})
